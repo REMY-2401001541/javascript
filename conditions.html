@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hello</title>
+    <style>
+        body {
+            background-color: lightblue;
+            color: tomato;
+            font: bold 20px verdana;
+        }
+        h1 {
+            color: rgb(20, 199, 199);
+            text-align: center;
+        }
+        p {
+            font-family: verdana;
+            font-size: 20px;
+        }
+        button {
+            background-color: rgb(196, 162, 14);
+            color: rgb(26, 3, 24);
+            font: bold 20px verdana;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function hello() {
+            if (document.querySelector('h1').innerHTML === "hello") {
+                document.querySelector('h1').innerHTML = "you have cat tomorrow";
+            } else {
+                document.querySelector('h1').innerHTML = "okey";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>hello</h1>
+    <button onclick="hello()">click here</button>
+</body>
+</html>
